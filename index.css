@@ -1,0 +1,548 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+:root {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: var(--darker-grey);
+    --blueish-color: #3fb4aa;
+    --green-color: #45a049;
+    --footer-grey: rgb(206, 206, 206);
+    --darker-grey: #3f3f3f;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    font-family: "Russo One", sans-serif;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+header {
+    font-family: "Russo One", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--blueish-color);
+    align-items: center;
+    padding: 28px 30px 28px 30px;
+    filter: drop-shadow(0px 1px 2px #202020c9);
+    color:white;
+    position: relative;
+    z-index: 10;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    gap: 10px;
+}
+
+header h1 img {
+    width: 80px;
+}
+
+header div {
+    display: flex;
+    gap: 20px;
+}
+
+header div a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 100;
+    color: white;
+    transition: 0.5s;
+}
+
+header div a:hover {
+    font-size: 30px;
+}
+
+.description {
+    padding: 32px;
+    display: flex;
+    flex-direction: row;
+    background-color: #F3F3F3;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.description img {
+    width: 247px;
+    height: 247px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(3px 1px 2px #202020c9);
+    z-index: 0;
+    position: relative;
+}
+
+.description div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    letter-spacing: 0.2px;
+    width: 50%;
+}
+
+.description h1 {
+    font-family: "Russo One", sans-serif;
+    font-weight: 50;
+}
+
+.description div span:first-of-type {
+    color: var(--blueish-color);
+    font-size: 16px;
+    transition: 0.5s;
+    cursor: default;
+}
+
+.description div span:first-of-type:hover {
+    color: var(--green-color);
+}
+
+.description div span:nth-of-type(2) {
+    font-weight: bold;
+}
+
+.description p {
+    font-size: 16px;
+    letter-spacing: 4%;
+    color: rgb(56, 56, 56);
+    line-height: 25px;
+}
+
+.lists {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+    color:white;
+}
+
+.lists div {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin-top: 50px;
+}
+
+.lists h1 {
+    font-family: "Russo One", sans-serif;
+    font-weight: 100;
+}
+
+.lists div:first-of-type h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.lists ul,
+.lists ol {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lists li {
+    list-style-type: none; 
+    padding: 0; 
+    width: 102px;
+    height: 150px;
+    border-radius: 5px;
+    padding: 17px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+    box-shadow: 3px 1px 1px #20202062;
+    position: relative; 
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 15px;
+    z-index: 1;
+}
+
+.lists li span {
+    position: relative; 
+    z-index: 2; 
+}
+
+.lists ol li span {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+.lists li img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.lists li .badge {
+    position: absolute;
+    top: -50px; 
+    left: 10%;
+    width: 10px;
+    height: 34px;
+    transform: translateX(-10%); 
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    z-index: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.lists li:nth-child(1) .badge {
+    background-color: #f7df0385;
+}
+
+.lists li:nth-child(2) .badge {
+    background-color: #ebebeb83;
+}
+
+.lists li:nth-child(3) .badge {
+    background-color: #a8520185;
+    color: white;
+}
+
+.feedback-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.feedback-form div {
+    display: flex;
+    flex-direction: column; 
+    gap: 26px;
+    align-items: flex-start; 
+}
+
+.feedback-form h1 {
+    font-family: "Russo One", sans-serif;
+    color: white;
+    font-weight: 100;
+    display: flex;
+    align-self: flex-start; 
+    transform: translateX(-15%);
+}
+
+.feedback-form textarea {
+    resize: none;
+    width: 60vw;  
+    height: 26px;
+    background-color: #ececec;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px; 
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.feedback-form input {
+    width: 60vw; 
+    height: 16px;
+    padding: 10px;
+    background-color: #ececec;
+    border-radius: 4px;
+    font-size: 14px; 
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.feedback-form textarea::placeholder,
+.feedback-form input::placeholder {
+    color: #4d4d4d; 
+    font-size: 14px; 
+    font-family: "Roboto", sans-serif;
+    opacity: 1; 
+}
+
+.feedback-form .submit-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    transform: translateX(-2%);
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.feedback-form button {
+    width: 129px;
+    height: 39px;
+    background-color: var(--blueish-color);
+    color: white;
+    transition: 0.5s;
+}
+
+.feedback-form button:hover {
+    background-color: var(--green-color);
+    width: 140px;
+}
+
+.feedback-notes {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feedback-notes .note {
+    background-color: var(--footer-grey);
+    width: 65%;
+    padding: 20px 30px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.note h1 {
+    font-family: "Russo One", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.note p {
+    letter-spacing: 4%;
+    color: rgb(56, 56, 56);
+    line-height: 25px;
+    font-size: 16px;
+}
+
+
+footer {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 16px 72px 16px 72px;
+    background-color: var(--footer-grey);
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+footer .footer-links img {
+    width: 32px;
+    height: 32px;
+}
+
+footer button {
+    width: 162px;
+    height: auto;
+    padding: 8px 16px 8px 16px;
+    background-color: #DFDFDF;
+    color: black;
+    transition: 0.5s;
+}
+
+footer button:hover {
+    width: 180px;
+    background-color: #777777;
+}
+
+/* ------ Responsiveness ------- */
+
+@media (max-width: 395px) {
+    footer {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .description {
+        text-align: center;
+    }
+}
+
+@media (max-width: 315px) {
+    header h1 {
+        font-size: 20px;
+    }
+    
+    header h1 img {
+        width: 60px;
+    }
+    
+    header div a {
+        display: none;
+    }
+}
+
+@media (min-width: 316px) and (max-width: 540px) {
+    header h1 {
+        font-size: 30px;
+    }
+    
+    header h1 img {
+        width: 70px;
+    }
+    
+    header div a {
+        display: none;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .lists {
+        flex-direction: column;
+    }
+
+    .description div {
+        width: 75%;
+    }
+}
+
+/* Laptops */
+@media (max-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .description {
+        flex-direction: column;
+    }
+}
+
+/* Desktops */
+@media (max-width: 1550px) {
+    .lists div:first-of-type h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* ------ Hamburguer Menu ------- */
+#menu-toggle {
+    display: none;
+}
+
+.burger-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+  }
+  
+  .burger-icon span {
+    display: block;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.5s;
+  }
+  
+  .collapsible-menu {
+    display: none;
+    position: absolute;
+    top: 117px;
+    right: 0;
+    background-color: var(--blueish-color);
+    width: 147px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    z-index: 1;
+  }
+  
+  .collapsible-menu li {
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    margin: 0;
+  }
+  
+  .collapsible-menu a {
+    padding: 10px;
+    display: flex;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .collapsible-menu a:hover,
+  .collapsible-menu li:hover {
+    background-color: #2c7a74;
+  }
+  
+  @media (max-width: 540px) {
+    header ul {
+      display: none;
+    }
+  
+    header .burger-icon {
+      display: flex;
+    }
+  
+    header #menu-toggle:checked + .burger-icon span:nth-child(1) {
+      transform: rotate(45deg) translateY(12px);
+    }
+  
+    header #menu-toggle:checked + .burger-icon span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    header #menu-toggle:checked + .burger-icon span:nth-child(3) {
+      transform: rotate(-45deg) translateY(-12px);
+    }
+  
+    header #menu-toggle:checked ~ .collapsible-menu {
+      display: flex;
+      flex-direction: column;
+    }
+  }

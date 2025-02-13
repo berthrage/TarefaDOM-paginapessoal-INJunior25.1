@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berth Homepage</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/dmc-icon-white.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap" rel="stylesheet">
+    <script type="module" src="./feedback-notes.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="./assets/icons/mask-icon.png">
+            Berth
+        </h1>
+        <div>
+            <a href="index.html">Link</a>
+            <a href="index.html">Link</a>
+            <a href="index.html">Link</a>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="collapsible-menu">
+            <li><a href="index.html">Link</a></li>
+            <li><a href="index.html">Link</a></li>
+            <li><a href="index.html">Link</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="description">
+            <img src="./assets/profile-pics/berth-photo-dithered.png">
+            <div>
+                <h1>Leandro Bertholdo <span>aka</span> <span>Berth</span></h1>
+                <p>Sou alguém que encontra prazer tanto na simplicidade de um passeio de bicicleta quanto na complexidade de 
+                    mundos virtuais repletos de desafios e histórias cativantes. A música e os filmes são minhas janelas para 
+                    outras realidades, enquanto os jogos, especialmente os que exigem estratégia e criatividade, são meu campo 
+                    de exploração e expressão. Alterno entre momentos de leve introspecção e a energia de intensas experiências 
+                    sensoriais. Estou sempre em busca de novas experiências que me inspirem e me façam ver 
+                    o mundo de diferentes perspectivas.</p>
+            </div>
+        </section>
+        <section class="lists">
+            <div>
+                <h1>Hobbies</h1>
+                <ul>
+                    <li><span>Andar de bicicleta</span></li>
+                    <li><span>Filmes</span></li>
+                    <li><span>Game modding</span></li>
+                    <li><span>Jogos (competitivos e single-player)</span></li>
+                    <li><span>Escutar música</span></li>
+                </ul>
+            </div>
+            <br>
+            <div>
+                <h1>Top 5 Jogos Favoritos</h1>
+                <ol>
+                    <li><div class="badge">1</div><img src="./assets/games/bloodborne.jpg"><span>Bloodborne</span></li>
+                    <li><div class="badge">2</div><img src="./assets/games/mgsv.jpg"><span>Metal Gear Solid V: The Phantom Pain</span></li>
+                    <li><div class="badge">3</div><img src="./assets/games/dmc5.jpg"><span>Devil May Cry 5</span></li>
+                    <li><img src="./assets/games/thief2.png"><span>Thief 2: The Metal Age</span></li>
+                    <li><img src="./assets/games/persona5.webp"><span>Persona 5</span></li>
+                </ol>
+            </div>
+        </section>
+
+    <section class="feedback-form">
+        <div>
+            <h1>Feedback</h1>
+            <form>
+                <textarea id="feedback-text" placeholder="Dê um feedback para este desenvolvedor!" rows="1" cols="1"></textarea> <br>
+                <input id="feedback-name" type="text" placeholder="Digite seu nome aqui" required> <br>
+                <div class="submit-button">
+                    <button id="feedback-submit-button" type="button">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="feedback-notes">
+        <!-- <div class="note">
+            <h1>Fulano da Silva</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam 
+                corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est 
+                laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt 
+                ut labore et dolore magna aliqua. </p> 
+        </div> -->
+    </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://github.com/berthrage" target="_blank">
+                <img src="./assets/icons/instagram-icon.png">
+            </a>
+            <a href="https://github.com/berthrage" target="_blank">
+                <img src="./assets/icons/linkedin-icon.png">
+            </a>
+            <a href="https://github.com/berthrage" target="_blank">
+            <img src="./assets/icons/github-icon.svg">
+            </a>
+        </div>
+        <a href="index.html">
+            <button>Entre em contato</button>
+        </a>
+    </footer>
+    
+</body>
+</html>
